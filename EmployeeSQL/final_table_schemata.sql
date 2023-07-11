@@ -13,6 +13,7 @@ SELECT * FROM departments;
 CREATE TABLE employees (
 	emp_no INTEGER NOT NULL, 
 	dept_no VARCHAR (10) NOT NULL
+	PRIMARY KEY (emp_no, dept_no)
 ); 
 
 -- import data using "Import/Export data" function 
@@ -35,6 +36,7 @@ SELECT * FROM managers;
 CREATE TABLE employee_info (
 	emp_no INTEGER NOT NULL PRIMARY KEY, 
 	emp_title_id VARCHAR (10) NOT NULL,
+	FOREIGN KEY (emp_title_id) REFERENCES titles (title_id),
 	birth_date DATE NOT NULL,
 	first_name VARCHAR (30) NOT NULL,
 	last_name VARCHAR (50) NOT NULL,
