@@ -42,9 +42,6 @@ In this challenge I analyzed employee data from a fictional company, Pewlett Hac
 
     ## "Baba" is the most common last name in the dataset, occuring 226 times. 
 
-# Notes: 
-
-When creating the table "dept_emp" csv, the data could not be uploaded if either of the columns were set as the primary key. I did not encounter this issue with any of the other tables. I also did not go back and update either of the columns to be the primary key as it was not necessary to completed the required analysis. 
 
 # Sources 
 
